@@ -68,6 +68,9 @@ body {
 
 button {
   margin-top: 15px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 40px;
+  border: 1px solid;
 }
 
 /* Blur was a nice-to-have, brought it back.*/

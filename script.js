@@ -7,6 +7,7 @@ function checkGuess() {
 
   if (isNaN(guessedNumber) || (guessedNumber > 10) || (guessedNumber <= 0)) {
     document.getElementById("message").textContent = "Bitte gib eine gültige Nummer ein.";
+    message.style.color = 'red';
   } else {
     attempts++;
 

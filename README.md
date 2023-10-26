@@ -8,7 +8,7 @@ TelekomProvadis is my first ever real project and includes a simple website with
 
 The website is **offline** at the moment and can't be accessed by anyone but those that have the developers link. It may get released at a later point.
 
-// https://github.com/sanny64.github.io
+// sanny64.github.io
 
 ### The minigame
 

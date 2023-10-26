@@ -8,7 +8,7 @@ TelekomProvadis is my first ever real project and includes a simple website with
 
 The website is **offline** at the moment and can't be accessed by anyone but those that have the developers link. It may get released at a later point.
 
-// DEV Access: https://unterricht.santinopia04.repl.co/
+// https://github.com/sanny64.github.io
 
 ### The minigame
 
@@ -21,13 +21,12 @@ For the minigame we have made a UI that contains all text and also the origin cr
 Also on the website we have two pictures that link to the websites of Telekom and Provadis. They have a little background that turns white if users hover over it with their mouse cursor.
 
 ## The Code
-I am completly new to coding, therefore this website was *mainly made by ChatGPT* and with the help of a dear co-worker.
-
-//Code: https://replit.com/@santinopia04/Unterricht
+I am completly new to coding, therefore this website was *mainly made by ChatGPT* and with the help of two dear co-workers.
+i originally started on replit.com and then changed to VSCode. 
 
 ### Storing
 The code is mainly stored on my private replit account. After finishing off everything we will look into publishing the code on a public GitHub.
 
 ## Future Features
 
-We will look into creating more features and improving the UI for better visiting experience.
+We, Faruk, Sam and I, will look into creating more features and improving the UI for better visiting experience.

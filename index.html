@@ -12,10 +12,10 @@
 <body>
   <div id="blur"></div>
   <a href="https://telekom.de" target="_blank">
-    <img class="Telekom" src="tlogo.svg">
+    <img class="Telekom" src="assets/tlogo.svg">
   </a> <!-- Link to the Telekom website -->
   <a href="https://provadis.de/" target="_blank">
-    <img class="Provadis" src="Provadis_logo.png">
+    <img class="Provadis" src="assets/Provadis_logo.png">
   </a> <!-- Link to the Provadis website -->
 
   <div class="container">
@@ -27,31 +27,7 @@
     <p id="message"></p>
   </div> <!-- Constant Text on the UI field -->
 
-  <script>
-    const randomNumber = Math.floor(Math.random() * 10) + 1;
-    let attempts = 0;
-
-    function checkGuess() {
-      const guessedNumber = parseInt(document.getElementById("guessInput").value);
-
-      if (isNaN(guessedNumber)) {
-        document.getElementById("message").textContent = "Bitte gib eine gültige Nummer ein.";
-      } else {
-        attempts++;
-
-        if (guessedNumber === randomNumber) {
-          Content = `Glückwunsch! Du hast die richtige Zahl (${randomNumber}) in ${attempts} Versuchen erraten.`;
-        } else if (guessedNumber < randomNumber) {
-          document.getElementById("message").textContent = "Die Zahl ist zu niedrig. Versuche es erneut.";
-        } else {
-          document.getElementById("message").textContent = "Die Zahl ist zu hoch. Versuche es erneut.";
-        }
-        /*if (attempts > 3) {
-          else } /*regenerate random number after 3 attempts*/ 
-        }
-      }
-    
-  </script> <!-- Mini-Game "Guess the Number" Code -->
+  <script src="script.js"></script> <!-- Mini-Game "Guess the Number" Code -->
 
 </body> <!-- Link to Replit.com -->
 

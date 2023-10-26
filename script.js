@@ -1,23 +1,26 @@
-const randomNumber = Math.floor(Math.random() * 10) + 1;
+let randomNumber = Math.floor(Math.random() * 10) + 1;
 let attempts = 0;
-function guessNumber() {
-  const guessedNumber = parseInt(prompt("Rate eine Zahl zwischen 1 und 10:"));
+
+function checkGuess() {
+  const guessedNumber = parseInt(document.getElementById("guessInput").value);
+
   if (isNaN(guessedNumber)) {
-    alert("Bitte gib eine Nummer zwischen 1 und 10 ein.");
+    document.getElementById("message").textContent = "Bitte gib eine gültige Nummer ein.";
   } else {
     attempts++;
+
     if (guessedNumber === randomNumber) {
-      alert(`Glückwunsch! Du hast die richtige Zahl (${randomNumber}) in ${attempts} Versuchen erraten.`);
-      attempts = 0; 
-      randomNumber = Math.floor(Math.random() * 10) + 1; 
+      document.getElementById("message").textContent = `Glückwunsch! Du hast die richtige Zahl (${randomNumber}) in ${attempts} Versuchen erraten.`;
     } else if (guessedNumber < randomNumber) {
-      alert("Die Zahl ist zu niedrig. Versuche es erneut.");
+      document.getElementById("message").textContent = "Die Zahl ist zu niedrig. Versuche es erneut.";
     } else {
-      alert("Die Zahl ist zu hoch. Versuche es erneut.");
+      document.getElementById("message").textContent = "Die Zahl ist zu hoch. Versuche es erneut.";
     }
-    attempts = 0; 
-    randomNumber = Math.floor(Math.random() * 10) + 1; 
-    guessNumber();
+
+
+    if (attempts === 3) {
+      randomNumber = Math.floor(Math.random() * 10) + 1;
+      attempts = 0;
+    }
   }
 }
-guessNumber();

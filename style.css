@@ -1,108 +1,117 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  background-image: url("https://www.industrial-production.de/upload_weka/nwo/003/808/Unternehmensbeschreibung_Provadis_3808343.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 5em lem #000;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20%;
+
+}
+
+.Telekom {
+  stroke: red;
+  background-color: rgba(197, 222, 219, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 200px;
+  height: auto;
+}
+
+.Telekom:hover {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.Provadis {
+  background-color: rgba(197, 222, 219, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 66%;
+  width: 200px;
+  height: auto;
+}
+
+.Provadis:hover {
+  background-color: white;
+  border-radius: 15px;
+}
+
+button {
+  margin-top: 15px;
+}
+
+/* Blur was a nice-to-have, brought it back.*/
+#blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.2);
+} 
   
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    background-image: url("https://www.industrial-production.de/upload_weka/nwo/003/808/Unternehmensbeschreibung_Provadis_3808343.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 5em lem #000;
-    margin: 0;
-    padding: 0; 
- 
-  } 
-  
+/* UI, pictures, hover function for the pictures and blur of the bg-picture*/
+
+@media (max-width: 1000px) {
+
   .container {
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    margin-top: 75%;
     position: relative;
-    margin-top: 15%;
-    
   }
-  
+
   .Telekom {
-    stroke: red;
-    background-color: rgba(197, 222, 219, 0.8);
-    border-radius: 10px;
-    padding: 20px;
     position: absolute;
-    top: 10%;
-    left: 15%;
-    width: 200px;
-    height: auto;
+    top: 0%;
+    left: 0%;
+    margin-top: 28%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
   }
-  
-  .Telekom:hover {
-    background-color: white;
-    border-radius: 15px;
-  }
-  
+
   .Provadis {
-    background-color: rgba(197, 222, 219, 0.8);
-    padding: 20px;
-    border-radius: 10px;
     position: absolute;
-    top: 10%;
-    left: 66%;
-    width: 200px;
-    height: auto;
-  }
-  
-  .Provadis:hover {
-    background-color: white;
-    border-radius: 15px;
-  }
- 
-  button{
-    margin-top: 15px;
+    top: 0%;
+    left: 0%;
+    margin-top: 55%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  
-   /* UI, pictures, hover function for the pictures and blur of the bg-picture*/
-  
-  @media (max-width: 1000px) {
-    
-      .container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        top: 0%;
-        left: 0%;
-        margin-top: 75%;
-        position: relative;
-    }
-
-      .Telekom{
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        margin-top: 28%;
-        margin-left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .Provadis{
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        margin-top: 55%;
-        margin-left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-  }
-  
+}

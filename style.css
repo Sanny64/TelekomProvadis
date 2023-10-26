@@ -14,70 +14,95 @@ html {
     box-shadow: inset 0 0 5em lem #000;
     margin: 0;
     padding: 0; 
+ 
   } 
   
-  #container {
+  .container {
     width: 300px;
     margin: 100px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 15%;
+    
   }
   
-  #Telekom {
+  .Telekom {
     stroke: red;
     background-color: rgba(197, 222, 219, 0.8);
     border-radius: 10px;
     padding: 20px;
     position: absolute;
-    top: 80px;
-    left: 50px;
+    top: 10%;
+    left: 15%;
     width: 200px;
     height: auto;
-  
   }
   
-  #Telekom:hover {
+  .Telekom:hover {
     background-color: white;
     border-radius: 15px;
   }
   
-  #provadis {
+  .Provadis {
     background-color: rgba(197, 222, 219, 0.8);
     padding: 20px;
     border-radius: 10px;
     position: absolute;
-    top: 80px;
-    right: 50px;
+    top: 10%;
+    left: 66%;
     width: 200px;
     height: auto;
   }
   
-  #provadis:hover {
+  .Provadis:hover {
     background-color: white;
     border-radius: 15px;
   }
-  
-  #blur {
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.2);
+ 
+  button{
+    margin-top: 15px;
   }
-  
-  #container {
-    position: absolute;
-    top: 30%;
-    left: 40%;
-  }
+
   
    /* UI, pictures, hover function for the pictures and blur of the bg-picture*/
   
-  @media  (max-width: 1100px) {
+  @media (max-width: 1000px) {
     
-    div #container{
-      max-width: 100%;
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 0%;
+        left: 0%;
+        margin-top: 75%;
+        position: relative;
     }
+
+      .Telekom{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin-top: 28%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .Provadis{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin-top: 55%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
   }
   

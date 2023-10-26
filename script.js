@@ -5,7 +5,7 @@ function checkGuess() {
   const guessedNumber = parseInt(document.getElementById("guessInput").value);
 
 
-  if (isNaN(guessedNumber)) {
+  if (isNaN(guessedNumber) || (guessedNumber > 10) || (guessedNumber <= 0)) {
     document.getElementById("message").textContent = "Bitte gib eine gültige Nummer ein.";
   } else {
     attempts++;

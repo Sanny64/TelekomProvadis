@@ -21,6 +21,7 @@ function checkGuess() {
     if (attempts === 3) {
       randomNumber = Math.floor(Math.random() * 10) + 1;
       attempts = 0;
+      document.getElementById("message").textContent = "Deine drei Versuche sind um. Die Zahl wurde neu generiert."
     }
   }
 }

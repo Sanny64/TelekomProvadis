@@ -1,6 +1,7 @@
-html {
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,26 +12,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 5em lem #000;
-  margin: 0;
-  padding: 0;
-
+  
 }
 
 .container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  margin: 200px auto 0;
+  padding: 70px 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   position: relative;
-  margin-top: 20%;
-
 }
 
 .Telekom {

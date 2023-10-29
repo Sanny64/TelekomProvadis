@@ -19,11 +19,15 @@ body {
   width: 80%;
   max-width: 400px;
   margin: 200px auto 0;
-  padding: 70px 20px;
+  padding: 50px 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: relative;
+}
+
+p {
+  margin: 15px 0 5px 0;
 }
 
 .Telekom {
@@ -64,6 +68,7 @@ button {
   padding: 10px 20px 10px 20px;
   border-radius: 40px;
   border: 1px solid;
+  cursor: pointer;
 }
 
 /* Blur was a nice-to-have, brought it back.*/
@@ -82,6 +87,7 @@ button {
 @media (max-width: 1000px) {
 
   .container {
+    padding: 30px 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;

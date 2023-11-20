@@ -10,15 +10,14 @@ body {
   background-color: #f0f0f0;
   background-image: url(https://www.industrial-production.de/upload_weka/nwo/003/808/Unternehmensbeschreibung_Provadis_3808343.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: absolute;
   background-size: cover;
-  margin-bottom: 30%;
   }
 
 .container {
   width: 80%;
   max-width: 400px;
-  margin: 200px auto 0;
+  margin: 20% auto 0;
   padding: 50px 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -74,10 +73,11 @@ button {
 /* Blur was a nice-to-have, brought it back.*/
 #blur {
   position: absolute;
-  top: 0;
+  bottom: 0%;
+  top: 0%;
   left: 0;
   width: 100%;
-  height: 120%;
+  height: 100%;
   backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.2);
 } 

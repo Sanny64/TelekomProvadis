@@ -31,13 +31,12 @@ function checkGuess() {
       document.getElementById("message").textContent = "Die Zahl ist zu hoch. Versuche es erneut.";
       message.style.color = 'red';
       // setGameover();
-    }
-
+    } 
     
     if (attempts === 3) {
       randomNumber = Math.floor(Math.random() * 10) + 1;
       attempts = 0;
-      document.getElementById("message").textContent = "Deine drei Versuche sind um. Die Zahl wurde neu generiert."
+      document.getElementById("message").textContent = "3 Fehlversuche, Zahl wird neu generiert"
     }
   }
 }

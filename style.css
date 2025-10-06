@@ -7,117 +7,136 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f0f0f0;
-  background-image: url(https://www.industrial-production.de/upload_weka/nwo/003/808/Unternehmensbeschreibung_Provadis_3808343.jpg);
-  background-repeat: no-repeat;
-  background-position: absolute;
+  background-image: url(assets/Provadis_background.jpg);
   background-size: cover;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0.125rem);
+  background-color: rgb(255, 255, 255, 0.2);
+  z-index: -1;
+}
 
 .container {
   width: 80%;
-  max-width: 400px;
-  margin: 20% auto 0;
-  padding: 50px 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 25rem;
+  padding: 3rem 1.25rem;
+  background-color: rgba(40, 40, 45, 0.549);
+  border-radius: 0.3125rem;
   position: relative;
+  z-index: 1;
+  margin-top: 8vh;
 }
 
 p {
-  margin: 15px 0 5px 0;
+  margin: 0.9375rem 0 0.3125rem 0;
 }
 
 .Telekom {
   stroke: red;
-  background-color: rgba(197, 222, 219, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  position: absolute;
-  top: 10%;
-  right: 15%;
-  width: 200px;
+  background-color: rgba(40, 40, 45, 0.549);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  position: fixed;
+  top: 2vh;
+  right: 2vw;
+  width: clamp(10rem, 18vw, 15rem);
   height: auto;
+  z-index: 10;
+  max-width: calc(50vw - 2rem);
 }
 
 .Telekom:hover {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 
 .Provadis {
-  background-color: rgba(197, 222, 219, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  width: 200px;
+  background-color: rgba(40, 40, 45, 0.549);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+  width: clamp(10rem, 18vw, 15rem);
   height: auto;
+  z-index: 10;
+  max-width: calc(50vw - 2rem);
 }
 
 .Provadis:hover {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 
 button {
-  margin-top: 15px;
-  padding: 10px 20px 10px 20px;
-  border-radius: 40px;
-  border: 1px solid;
+  margin-top: 0.9375rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 2.5rem;
+  border: 0.0625rem solid;
   cursor: pointer;
 }
 
-/* Blur was a nice-to-have, brought it back.*/
-#blur {
-  position: absolute;
-  bottom: 0%;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(2px);
-  background-color: rgba(255, 255, 255, 0.2);
-} 
-  
-/* UI, pictures, hover function for the pictures and blur of the bg-picture*/
-
-@media (max-width: 1000px) {
-
-  .container {
-    padding: 30px 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    top: 0%;
-    left: 0%;
-    margin-top: 75%;
-    position: relative;
-  }
-
-  .Telekom {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-top: 28%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
+@media screen and (max-width: 1024px) {
+  .Telekom,
   .Provadis {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-top: 55%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
+    width: clamp(8rem, 15vw, 12rem);
   }
 }
 
-#guessInput {
-  padding: 5%;
-  font-size: 2vh;
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 10vh;
+  }
+  
+  .Telekom,
+  .Provadis {
+    width: clamp(7rem, 12vw, 10rem);
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+  
+  .Telekom,
+  .Provadis {
+    width: clamp(6rem, 15vw, 8rem);
+    padding: 0.75rem;
+    top: 1vh;
+  }
+  
+  .Telekom {
+    right: 1vw;
+  }
+  
+  .Provadis {
+    left: 1vw;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+  }
 }

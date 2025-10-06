@@ -1,14 +1,14 @@
 # TelekomProvadis
 Basic Website for University
 
-TelekomProvadis is my first ever real project and includes a simple website with a Guess-The-Number-Minigame and a few optical optimizations. 
+TelekomProvadis is my first ever project and includes a simple website with a Guess-The-Number-Minigame and a few optical optimizations. 
 
 
 ## Website
 
 The website is **offline** at the moment and can't be accessed by anyone but those that have the developers link. It may get released at a later point.
 
-// sanny64.github.io
+// www.sanny64.de/first
 
 ### The minigame
 
@@ -22,11 +22,7 @@ Also on the website we have two pictures that link to the websites of Telekom an
 
 ## The Code
 I am completly new to coding, therefore this website was *mainly made by ChatGPT* and with the help of two dear co-workers.
-i originally started on replit.com and then changed to VSCode. 
+I originally started on replit.com and then changed to VSCode. 
 
 ### Storing
-The code is mainly stored on my private replit account. After finishing off everything we will look into publishing the code on a public GitHub.
-
-## Future Features
-
-We, Faruk, Sam and I, will look into creating more features and improving the UI for better visiting experience.
+The code is mainly stored on my GitHub account.

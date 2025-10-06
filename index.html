@@ -10,7 +10,6 @@
 
 <body>
   <div id="blur"></div>
-
   <a href="https://telekom.de" target="_blank">
     <img class="Telekom" src="assets/tlogo.svg">
   </a> <!-- Link to the Telekom website -->
@@ -19,17 +18,15 @@
   </a> <!-- Link to the Provadis website -->
    
   <div class="container">
-    <h1>Guess the Number</h1>
-    <p>Errate die Zahl zwischen 1 und 10:</p>
+    <h1 id="containerHeader">Guess the Number</h1>
+    <p id="containerExplanation">Errate die Zahl zwischen 1 und 10:</p>
     <input type="number" id="guessInput">
-    <button onclick="checkGuess()">Raten</button>
+    <button id="guessButton" onclick="checkGuess()">Raten</button>
     <p>Von Faruk, Sam und Santino</p>
     <p id="message"></p>
-  </div> <!-- Constant Text on the UI field -->
+  </div> <!-- Container holding game logic, explanatory texts as well as dynamic game info -->
 
   <script src="script.js"></script> <!-- Mini-Game "Guess the Number" Code -->
-
-</body> <!-- Link to Replit.com -->
+</body>
 
 </html>
-

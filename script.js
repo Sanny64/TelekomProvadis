@@ -20,17 +20,17 @@ function checkGuess() {
     attempts++;
 
     if (guessedNumber === randomNumber) {
-      document.getElementById("message").textContent = `Glückwunsch! Du hast die richtige Zahl (${randomNumber}) in ${attempts} Versuchen erraten.`;
+      document.getElementById("message").textContent = `Glückwunsch! Du hast die richtige Zahl ${randomNumber} in ${attempts} Versuchen erraten.`;
       message.style.color = 'green';
-      // setGameover();
+      
     } else if (guessedNumber < randomNumber) {
       document.getElementById("message").textContent = "Die Zahl ist zu niedrig. Versuche es erneut.";
       message.style.color = 'red';
-      // setGameover();
+      
     } else {
       document.getElementById("message").textContent = "Die Zahl ist zu hoch. Versuche es erneut.";
       message.style.color = 'red';
-      // setGameover();
+      
     } 
     
     if (attempts === 3) {

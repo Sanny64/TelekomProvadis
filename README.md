@@ -24,6 +24,7 @@ I originally started on replit.com and then changed to VSCode.
 ### Storing
 The code is mainly stored on my [GitHub account](https://github.com/Sanny64/TelekomProvadis)
 
+### Milestones
 | Milestone | Date |
 |---|---|
 | Last change on README.md | 03rd of May 2026 |

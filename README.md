@@ -24,7 +24,9 @@ I originally started on replit.com and then changed to VSCode.
 ### Storing
 The code is mainly stored on my [GitHub account](https://github.com/Sanny64/TelekomProvadis)
 
-Last change on README.md:   03rd of May 2026
-Programming started:        26th of October 2023
-First Finish:               20th of Novemeber 2023
-Slight overhaul:            06th of October 2025
+| Milestone | Date |
+|---|---|
+| Last change on README.md | 03rd of May 2026 |
+| Programming started | 26th of October 2023 |
+| First Finish | 20th of Novemeber 2023 |
+| Slight overhaul | 06th of October 2025 |

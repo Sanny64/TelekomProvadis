@@ -3,12 +3,9 @@ Basic Website for University
 
 TelekomProvadis is my first ever project and includes a simple website with a Guess-The-Number-Minigame and a few optical optimizations. 
 
-
 ## Website
 
-The website is **offline** at the moment and can't be accessed by anyone but those that have the developers link. It may get released at a later point.
-
-// www.sanny64.de/first
+The website is **online** at [Sanny64 - Guess the Number](www.sanny64.de/first-website/index.html)
 
 ### The minigame
 
@@ -25,4 +22,9 @@ I am completly new to coding, therefore this website was *mainly made by ChatGPT
 I originally started on replit.com and then changed to VSCode. 
 
 ### Storing
-The code is mainly stored on my GitHub account.
+The code is mainly stored on my [GitHub account](https://github.com/Sanny64/TelekomProvadis)
+
+Last change on README.md:   03rd of May 2026
+Programming started:        26th of October 2023
+First Finish:               20th of Novemeber 2023
+Slight overhaul:            06th of October 2025
